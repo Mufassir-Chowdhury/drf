@@ -35,9 +35,41 @@ export async function load() {
             ]
         }
     ];
-
+    let people = [
+        {
+            image: '/Adnan.png',
+            name: 'Adnan Mahmud Tamim',
+            details: 'SOMCH'
+        },
+        {
+            image: '/Hifjur.png',
+            name: 'Hifjur Rahman',
+            details: 'SZMCH'
+        },
+        {
+            image: '/Shahriar.png',
+            name: 'Shahriar Rahman Opi',
+            details: 'DU'
+        },
+        {
+            image: '/Younus.png',
+            name: 'Younus Bin Hosaain Khan',
+            details: 'BAU'
+        },
+        {
+            image: '/Nahyan.png',
+            name: 'H U Nahyan',
+            details: 'Theatre Activist'
+        },
+        {
+            image: '/Zarir.png',
+            name: 'Ahmed Zarir',
+            details: 'New York'
+        }
+    ]
     return {
         title: 'Programs',
-        programs
+        programs,
+        people
     };
 }

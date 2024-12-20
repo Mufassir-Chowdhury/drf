@@ -52,64 +52,18 @@
     <section class="mb-12">
         <h2 class="text-3xl font-bold text-blue-900 mb-8">Our Founding Members</h2>
         <div class="grid grid-cols-3 gap-8">
-          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 text-center">
-            <img 
-              src="/Adnan.png" 
-              alt="Adnan Mahmud Tamim" 
-              class="w-64 h-64 object-cover rounded-2xl shadow-md mx-auto mb-4"
-            />
-            <h3 class="text-xl font-bold text-blue-900 mb-2">Adnan Mahmud Tamim</h3>
-            <p class="text-blue-600 font-medium">SOMCH</p>
-          </div>
-    
-          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 text-center">
-            <img 
-              src="/Hifjur.png" 
-              alt="Hifjur Rahman" 
-              class="w-64 h-64 object-cover rounded-2xl shadow-md mx-auto mb-4"
-            />
-            <h3 class="text-xl font-bold text-blue-900 mb-2">Hifjur Rahman</h3>
-            <p class="text-blue-600 font-medium">SZMCH</p>
-          </div>
-    
-          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 text-center">
-            <img 
-              src="/Shahriar.png" 
-              alt="Shahriar Rahman Opi" 
-              class="w-64 h-64 object-cover rounded-2xl shadow-md mx-auto mb-4"
-            />
-            <h3 class="text-xl font-bold text-blue-900 mb-2">Shahriar Rahman Opi</h3>
-            <p class="text-blue-600 font-medium">DU</p>
-          </div>
-    
-          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 text-center">
-            <img 
-              src="/Younus.png" 
-              alt="Younus Bin Hosaain Khan" 
-              class="w-64 h-64 object-cover rounded-2xl shadow-md mx-auto mb-4"
-            />
-            <h3 class="text-xl font-bold text-blue-900 mb-2">Younus Bin Hosaain Khan</h3>
-            <p class="text-blue-600 font-medium">BAU</p>
-          </div>
-    
-          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 text-center">
-            <img 
-              src="/Nahyan.png" 
-              alt="H U Nahyan" 
-              class="w-64 h-64 object-cover rounded-2xl shadow-md mx-auto mb-4"
-            />
-            <h3 class="text-xl font-bold text-blue-900 mb-2">H U Nahyan</h3>
-            <p class="text-blue-600 font-medium">Theatre Activist</p>
-          </div>
-          <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 text-center">
-            <img 
-              src="/Zarir.png" 
-              alt="Ahmed Zarir" 
-              class="w-64 h-64 object-cover rounded-2xl shadow-md mx-auto mb-4"
-            />
-            <h3 class="text-xl font-bold text-blue-900 mb-2">Ahmed Zarir</h3>
-            <p class="text-blue-600 font-medium">New York</p>
-          </div>
+            {#each data.people as member}
+                <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 text-center">
+                    <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    class="w-64 h-64 object-cover rounded-2xl shadow-md mx-auto mb-4"
+                    />
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">{member.name}</h3>
+                    <p class="text-blue-600 font-medium">{member.designation}</p>
+                </div>
+            {/each}
+          
         </div>
       </section>
   </div>
